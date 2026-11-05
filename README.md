@@ -26,6 +26,15 @@ The original pitch deck is in [`docs/TruthLens_Hackathon_Deck.pdf`](docs/TruthLe
 | **Evidence & audit** | SQLite evidence store + SHA-256 hash-chained audit log of uploads, runs, findings and reviewer decisions. Chain integrity is verifiable. |
 | **Investigation dossier** | One-click PDF: overview, extracted fields, correlation matrix, findings with highlighted region crops, limitations, and audit summary. |
 
+## 🎬 Demo video
+
+**[`docs/TruthLens_3min_Demo.mp4`](docs/TruthLens_3min_Demo.mp4)** — a 3-minute
+narrated walkthrough of the working prototype (1920×1080, subtitles in
+[`docs/TruthLens_3min_Demo.srt`](docs/TruthLens_3min_Demo.srt), full script in
+[`docs/VIDEO.md`](docs/VIDEO.md)). It shows the tampered demo end to end:
+findings streaming in, click-to-trace, visual forensics, the correlation matrix,
+a reviewer decision, the audit chain and the generated dossier.
+
 ## 🎬 Live demo
 
 The app ships with two synthetic, fully fictional sample cases:

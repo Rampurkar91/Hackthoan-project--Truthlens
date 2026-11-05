@@ -1,0 +1,203 @@
+1
+00:00:00,300 --> 00:00:05,500
+Every loan, every account, every KYC check starts with documents.
+
+2
+00:00:05,500 --> 00:00:10,620
+And almost every system that reads them has the same blind spot.
+
+3
+00:00:10,620 --> 00:00:12,060
+This is TruthLens.
+
+4
+00:00:13,546 --> 00:00:16,680
+OCR turns a scanned document into clean text.
+
+5
+00:00:16,680 --> 00:00:21,624
+A swapped photograph, an overwritten date of birth, a doctored address,
+
+6
+00:00:21,624 --> 00:00:26,360
+an inflated salary — all of it comes out looking like ordinary text.
+
+7
+00:00:26,360 --> 00:00:31,026
+The data is extracted, and the fraud goes straight through the gap.
+
+8
+00:00:31,512 --> 00:00:34,693
+TruthLens closes that gap with three moves.
+
+9
+00:00:34,693 --> 00:00:36,099
+Observe the pixels.
+
+10
+00:00:36,099 --> 00:00:37,875
+Correlate the documents.
+
+11
+00:00:37,875 --> 00:00:39,503
+Explain every finding.
+
+12
+00:00:39,503 --> 00:00:41,870
+Seven steps run on every upload:
+
+13
+00:00:41,870 --> 00:00:46,384
+ingest and classify, OCR, structure fields, visual forensics,
+
+14
+00:00:46,384 --> 00:00:51,933
+contextual checks, cross-document correlation, and evidence with a dossier.
+
+15
+00:00:51,933 --> 00:00:55,632
+Every step is written to a hash-chained audit log.
+
+16
+00:00:56,118 --> 00:00:58,250
+Here is the working prototype.
+
+17
+00:00:58,250 --> 00:01:01,092
+It ships with a synthetic tampered case:
+
+18
+00:01:01,092 --> 00:01:06,351
+an application form, an ID card and a bank statement, all fully fictional.
+
+19
+00:01:06,351 --> 00:01:09,478
+One click, and the pipeline runs in seconds.
+
+20
+00:01:09,964 --> 00:01:13,003
+Ten findings come back, labelled Observed,
+
+21
+00:01:13,003 --> 00:01:15,825
+Inconsistent or Potential manipulation.
+
+22
+00:01:15,825 --> 00:01:17,416
+Never confirmed fraud.
+
+23
+00:01:17,416 --> 00:01:21,251
+The application form says twelve oh four, ninety-one.
+
+24
+00:01:21,251 --> 00:01:24,435
+Both other documents say twenty-one oh four.
+
+25
+00:01:24,435 --> 00:01:29,065
+The address reads Pune on two documents and Mumbai on the third.
+
+26
+00:01:29,065 --> 00:01:31,163
+Nine point six lakh declared,
+
+27
+00:01:31,163 --> 00:01:35,143
+against four point one lakh of annualised bank credits.
+
+28
+00:01:35,143 --> 00:01:39,484
+And every card traces back to the exact pixels it came from.
+
+29
+00:01:40,370 --> 00:01:44,383
+Underneath, the forensic engine measures compression error,
+
+30
+00:01:44,383 --> 00:01:48,056
+noise-floor breaks, font drift, copy-move duplication,
+
+31
+00:01:48,056 --> 00:01:51,252
+signature placement and photo-region anomalies.
+
+32
+00:01:51,252 --> 00:01:54,925
+When two independent signals agree on the same pixels,
+
+33
+00:01:54,925 --> 00:01:59,210
+the finding is escalated, and the explanation says exactly why.
+
+34
+00:01:59,696 --> 00:02:04,864
+The matrix lines up every field across every document, tolerant of initials,
+
+35
+00:02:04,864 --> 00:02:06,564
+spacing and date formats.
+
+36
+00:02:06,564 --> 00:02:10,168
+A reviewer confirms, flags or dismisses each finding,
+
+37
+00:02:10,168 --> 00:02:13,296
+and that decision is timestamped in the chain.
+
+38
+00:02:13,782 --> 00:02:16,863
+The audit trail is a SHA-256 hash chain.
+
+39
+00:02:16,863 --> 00:02:20,330
+Edit any past entry, and verification breaks.
+
+40
+00:02:20,330 --> 00:02:23,797
+One click produces the investigation dossier:
+
+41
+00:02:23,797 --> 00:02:27,418
+file hashes, extracted fields, the full matrix,
+
+42
+00:02:27,418 --> 00:02:30,422
+and cropped evidence for every finding.
+
+43
+00:02:30,908 --> 00:02:33,109
+Not everything is a red flag.
+
+44
+00:02:33,109 --> 00:02:36,524
+The genuine sample produces a clean baseline.
+
+45
+00:02:36,524 --> 00:02:39,180
+And the capability table is honest:
+
+46
+00:02:39,180 --> 00:02:43,733
+OCR, forensics, correlation and the dossier are implemented.
+
+47
+00:02:43,733 --> 00:02:47,148
+Handwriting and multilingual OCR are planned.
+
+48
+00:02:47,634 --> 00:02:51,696
+Faster KYC reviews, fewer forged applications,
+
+49
+00:02:51,696 --> 00:02:55,758
+and an evidence trail that stands up to audit.
+
+50
+00:02:55,758 --> 00:02:56,641
+TruthLens:
+
+51
+00:02:56,641 --> 00:02:59,114
+observe, correlate, explain.
