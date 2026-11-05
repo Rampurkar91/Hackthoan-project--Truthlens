@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Runtime evidence store & generated samples (regenerable, not source)
+backend/data/
+*.db
+*.db-wal
+*.db-shm
+
+# Node / frontend build
+node_modules/
+frontend/dist/
+.vite/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Local env
+.env
+.env.local

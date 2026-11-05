@@ -1,0 +1,16 @@
+# TruthLens backend dependencies (Python 3.10+)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+pillow>=10.0
+numpy>=1.26,<3
+# headless build works on servers without libGL; rapidocr declares opencv-python
+# but imports the same cv2 module provided by this package.
+opencv-python-headless>=4.10,<5
+pymupdf>=1.24
+reportlab>=4.0
+rapidfuzz>=3.5
+scipy>=1.11
+PyYAML>=6.0
+rapidocr-onnxruntime>=1.3.24
+onnxruntime>=1.16
